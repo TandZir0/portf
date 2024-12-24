@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container container">
+            <div class="wrapper">
+                <div class="info">
+                    <img src="img/ava.png" alt="" class="avatar">
+                    <div class="header__info-text">
+                        <div class="name">
+                            Иван Петров
+                        </div>
+                        <div class="speciality">
+                            Frontend developer
+                        </div>
+                    </div>
+                </div>
+                <div class="header__contact">
+                    <div class="header__contact-head">
+                        Контакты
+                    </div>
+                    <a class="phone link" href="tel:+79223344455">
+                        +79223344455
+                    </a>
+                    <a class="email link" href="mailto:email@yandex.ru">
+                        email@yandex.ru
+                    </a>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </header>
+    <main class="main">
+        <section class="description__wrapper section">
+            <div class="container">
+                <p class="description">
+                    <b>Немного обо мне:</b> это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                    является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
+                    печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+                    образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков...
+                </p>
+            </div>
+        </section>
+        <section class="table-info__wrapper section">
+            <div class="container">
+                <div class="table-info">
+                    <div class="table-info__column">
+                        <div class="table-info__head">
+                            Хобби
+                        </div>
+                        <ul class="table-info__list">
+                            <li class="table-info__li">
+                                Чтение
+                            </li>
+                            <li class="table-info__li">
+                                Путешествия
+                            </li>
+                            <li class="table-info__li">
+                                Настольные игры
+                            </li>
+                            <li class="table-info__li">
+                                Плавание
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="table-info__column">
+                        <div class="table-info__head">
+                            Социальные сети
+                        </div>
+                        <ol class="table-info__list">
+                            <li class="table-info__li">
+                                <a href="##" class="link"><span class="custom-li">1. </span>VK</a>
+                            </li>
+                            <li class="table-info__li">
+                                <a href="##" class="link"><span class="custom-li">2. </span>Instagram</a>
+                            </li>
+                            <li class="table-info__li">
+                                <a href="##" class="link"><span class="custom-li">3. </span>Telegram</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="technologies__wrapper section">
+            <div class="container">
+                <div class="technologies">
+                    <div class="section-head">
+                        Интересующие технологии
+                    </div>
+                    <div class="technologies__row">
+                        <a class="item" href="https://en.wikipedia.org/wiki/JavaScript">
+                            <img class="item__img" src="img/js-icon.png" alt="">
+                            <div class="item__title">JavaScript</div>
+                        </a>
+                        <a class="item" href="https://en.wikipedia.org/wiki/Python_(programming_language)">
+                            <img class="item__img" src="img/py-icon.png" alt="">
+                            <div class="item__title">Python</div>
+                        </a>
+                        <a class="item" href="https://en.wikipedia.org/wiki/Vue.js">
+                            <img class="item__img" src="img/vue-icon.png" alt="">
+                            <div class="item__title">VueJS</div>
+                        </a>
+                        <a class="item" href="https://en.wikipedia.org/wiki/PostgreSQL">
+                            <img class="item__img" src="img/pstr-icon.png" alt="">
+                            <div class="item__title">PostgreSQL</div>
+                        </a>
+                        <a class="item" href="https://en.wikipedia.org/wiki/Docker_(software)">
+                            <img class="item__img" src="img/docker-icon.png" alt="">
+                            <div class="item__title">Docker</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="section-head">
+                Форма обратной связи
+            </div>
+            <form class="form" action="" onsubmit="alert('Форма отправлена (типа) ')">
+                <div class="form__row">
+                    <input class="form__row-item form__input" type="text" placeholder="Ваше имя" required>
+                    <input class="form__row-item form__input" type="tel" placeholder="Телефон" required>
+                </div>
+                <div class="form__row">
+                    <textarea class="question-textarea form__input" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <div class="form__row">
+                <input class="form-submit btn" type="submit" value="Отправить">
+                </div>
+            </form>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
